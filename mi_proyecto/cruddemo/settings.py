@@ -25,7 +25,7 @@ SECRET_KEY = 'kg$v(jq(1@ldbx^o^-k$-b3$35z+yvtf9p+js^g#!=mb$*eqo2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'cruddemo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "cruddemo",
-        "USER": "guitiana",
-        "PASSWORD": "password",
+        'NAME': "db_ecom_stock",
+        "USER": "root",
+        "PASSWORD": "12345",
         "HOST": "db-mysql",
         "PORT": "3306"
     }

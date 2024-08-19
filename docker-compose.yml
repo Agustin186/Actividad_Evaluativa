@@ -26,12 +26,11 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_DATABASE: cruddemo
-      MYSQL_USER: guitiana
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db_ecom_stock
+      MYSQL_PASSWORD: 12345
+      MYSQL_ROOT_PASSWORD: 12345
     ports:
-      - 3307:3306
+      - 3306:3306
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -40,4 +39,4 @@ services:
       - 8081:80
     environment:
       PMA_HOST: db-mysql
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: 12345
